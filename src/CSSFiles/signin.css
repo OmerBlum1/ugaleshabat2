@@ -1,0 +1,89 @@
+@charset "windows-1255";
+
+body {
+    text-align: right;
+    font-family: 'Assistant', sans-serif;
+	color: #FAC1DF;
+	background-color: #D5C9C5;
+}
+
+/*styling the sign in box*/
+.container-sign-in {
+	/* background: #FAF0E6;  previous beige color*/ 
+	background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+	background: rgba(255, 255, 255, 0.7);
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    width: 30%;
+    min-width: 500px;
+    max-width: 95%;
+	margin: auto; /*margin left and right auto*/
+	margin-top:10px;
+	margin-bottom: 10px;
+    justify-content: center;
+	grid-gap: 15px;
+	
+	/*padding between the text and the box*/
+    padding-right: 300px;
+    padding-left: 300px;
+	padding-top: 25px;
+}
+
+/*styling the register link*/
+.register {
+	color: #FAC1DF;
+}
+
+.register:hover{
+	color: #f7b5d8;
+	
+}
+
+/*button styling*/
+a .Link {
+	font-weight: bolder;
+	color: white;
+	border-color: white;
+	background-color: #FAC1DF;
+}
+
+a .btn.btn-outline-secondary {
+	font-weight: bolder;
+	color: white;
+	border-color: white;
+	background-color: #FAC1DF;
+}
+
+a .btn.btn-outline-secondary:visited{
+	background-color: red;
+	box-shadow:none;
+	color: #FAC1DF;
+	border-color: #FAC1DF;
+	background-color: white;
+}
+
+
+a .btn.btn-outline-secondary:focus{
+	box-shadow:none;
+	color: #FAC1DF;
+	border-color: #FAC1DF;
+	background-color: white;
+	background: none;
+}
+
+
+a .btn.btn-outline-secondary :active{
+	background-color: red ;
+	box-shadow:none;
+	color: #FAC1DF;
+	border-color: #FAC1DF;
+	background-color: white;
+	background: none;
+}
+
+a .btn.btn-outline-secondary:hover{
+	color: #FAC1DF;
+	border-color: #FAC1DF;
+	background-color: white;
+}
+

@@ -1,0 +1,25 @@
+.grid-container
+{
+	background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+	background: rgba(255, 255, 255, 0.7);
+
+	/*padding between the photos*/
+    padding:300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    grid-gap: 20px;
+    padding: 20px;
+    justify-content: center; 
+}
+
+.image{
+    width:250px;
+    height:250px; 
+    transition: all 1s;
+}
+
+.image:hover{
+    transform: scale(1.1);
+}
+
