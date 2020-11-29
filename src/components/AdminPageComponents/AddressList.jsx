@@ -1,5 +1,5 @@
 import React from 'react';
-import addresses from '../MockData/MockAddresses';
+import addresses from '../../MockData/MockAddresses';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';

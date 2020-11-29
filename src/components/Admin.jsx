@@ -1,8 +1,8 @@
 import React from "react";
-import VolunteerList from "./VolunteerList";
-import AddressList from "./AddressList";
-import NewAddress from "./NewAddress";
-import RegisteredVolunteerList from "./ApprovedVolunteersList";
+import VolunteerList from "./AdminPageComponents/VolunteerList";
+import AddressList from "./AdminPageComponents/AddressList";
+import NewAddress from "./AdminPageComponents/NewAddress";
+import RegisteredVolunteerList from "./AdminPageComponents/ApprovedVolunteersList";
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
