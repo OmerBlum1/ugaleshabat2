@@ -5,3 +5,4 @@ export { default as Gallery } from "./gallery";
 export { default as Signin } from "./signin";
 export { default as Register } from "./register";
 export { default as VolunteerMatch } from "./volunteer-match";
+export { default as Admin } from "./Admin";

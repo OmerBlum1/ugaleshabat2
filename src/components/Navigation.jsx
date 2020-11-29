@@ -73,6 +73,15 @@ function Navigation(props)
                   הרשמה
                 </Link>
               </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/register" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/Admin">
+                  אדמין
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
