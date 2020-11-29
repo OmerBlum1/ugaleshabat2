@@ -75,7 +75,7 @@ function Navigation(props)
               </li>
               <li
                 class={`nav-item  ${
-                  props.location.pathname === "/register" ? "active" : ""
+                  props.location.pathname === "/Admin" ? "active" : ""
                 }`}
               >
                 <Link class="nav-link" to="/Admin">
