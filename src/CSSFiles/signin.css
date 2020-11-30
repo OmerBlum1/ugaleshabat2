@@ -16,3 +16,20 @@ a .Link {
 	border-color: white;
 	background-color: #FAC1DF;
 }
+
+input {
+	margin-bottom: 10px !important;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+	margin: 0 auto;
+}
+
+.container .not-signed {
+	width: 100%;
+	margin-top: 20px;
+}
+.container .not-signed a {
+	display: block;
+	
+}

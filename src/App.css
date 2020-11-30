@@ -11,24 +11,36 @@ body, html {
 
 } 
 
-.container {
-	background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+/* .container {
+	background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.7);
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
   width: 30%;
   min-width: 500px;
   max-width: 95%;
-	margin: auto; /*margin left and right auto*/
-	/* margin-top:10px; */
-	/* margin-bottom: 10px; */
+	margin: auto; 
+	margin-top:2%; 
   justify-content: center;
 	grid-gap: 15px;
 	
-	/*padding between the text and the box*/
   padding-right: 300px;
   padding-left: 300px;
   padding-top: 25px;
+} */
+
+.container {
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.7);
+  display: grid;
+  width: 90%;
+  min-width: 300px;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 2%;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 /*button styling*/
@@ -51,16 +63,16 @@ a .btn.btn-outline-secondary:visited{
 
 
 a .btn.btn-outline-secondary:focus{
-	box-shadow:none;
-	color: #546270;
+	box-shadow:none !important;
+	color: white !important;
 	border-color: #546270;
-	background-color: white;
+	background-color: #546270 !important;
 	background: none;
 }
 
 
 a .btn.btn-outline-secondary :active{
-  box-shadow:none;
+  box-shadow:none !important;
   color: #546270 !important;
 	border-color:#546270 !important;
   background-color: white !important;

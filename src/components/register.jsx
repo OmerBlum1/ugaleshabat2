@@ -27,12 +27,12 @@ function Register() {
                 </div>   
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
-                        <label for="AptNumber">מספר דירה</label>
-                        <input type="Phone" class="form-control" id="PhoneNumber"></input>
-                    </div>
-                    <div class="col-md-4 mb-3">
                         <label for="StreetNumber">רחוב, מספר</label>
                         <input type="text" class="form-control" id="LastName"></input>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="AptNumber">מספר דירה</label>
+                        <input type="Phone" class="form-control" id="PhoneNumber"></input>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="City">עיר</label>

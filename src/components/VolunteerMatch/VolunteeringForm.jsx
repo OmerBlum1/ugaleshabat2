@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../../CSSFiles/VolunteerMatch.css';
 
 const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
   return (
@@ -17,7 +18,7 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                     required
                   />
                 </div>
-                <div class="col-md-3 mb-3">
+                <div class="col-md-5 mb-3">
                   <label for="apartmentNumber">מס' העוגות</label>
                   <input
                     type="number"
@@ -31,7 +32,7 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                   מה מהעוגות הבאות ניתן להכין במטבח שלך?
                 </label>
                 <div>
-                  <div class="col-md-4 form-check form-check-inline">
+                  <div class="col-md-5 form-check form-check-inline">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -46,7 +47,7 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                       עוגה כשרה
                     </label>
                   </div>
-                  <div class="col-md-4 form-check form-check-inline">
+                  <div class="col-md-5 form-check form-check-inline">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -61,7 +62,7 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                       עוגה פרווה
                     </label>
                   </div>
-                  <div class="col-md-4 form-check form-check-inline">
+                  <div class="col-md-5 form-check form-check-inline">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -76,7 +77,7 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                       עוגה טבעונית
                     </label>
                   </div>
-                  <div class="col-md-4 form-check form-check-inline">
+                  <div class="col-md-5 form-check form-check-inline">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -93,7 +94,7 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                   </div>
                 </div>
                 <div>
-                  <div class="col-md-4 form-check form-check-inline">
+                  <div class="col-md-5 form-check form-check-inline">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -108,7 +109,7 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                       עוגה ללא לקטוז
                     </label>
                   </div>
-                  <div class="col-md-4 form-check form-check-inline">
+                  <div class="col-md-5 form-check form-check-inline">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -123,7 +124,7 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                       עוגה ללא גלוטן
                     </label>
                   </div>
-                  <div class="col-md-4 form-check form-check-inline">
+                  <div class="col-md-5 form-check form-check-inline">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -138,7 +139,7 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                       עוגה ללא בוטנים
                     </label>
                   </div>
-                  <div class="col-md-4 form-check form-check-inline">
+                  <div class="col-md-5 form-check form-check-inline">
                     <input
                       class="form-check-input"
                       type="checkbox"

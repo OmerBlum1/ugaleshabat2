@@ -1,20 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import '../CSSFiles/signin.css';
 import { Link } from 'react-router-dom';
 
 function Signin() {
+  const [isSent, setSent] = useState(false)
+
+  const onSendCode = () => {
+    setSent(true);
+  }
+
   return (
     <div className="Signin">
       <div class="container">
         <h2> התחברות עם קוד חד פעמי בסמס</h2>
-        <label for="phone">הכנס את מספר הטלפון שאיתו נרשמת:</label> 
-        <input type="tel" id="phone" name="טלפון" required/>
-        <a><button type="button" class="btn btn-outline-secondary">שלחו לי קוד לנייד</button></a>
-        <label for="phone">הכנס את הקוד שקיבלת:</label> 
-        <input type="numbers" id="code" name="קןד" required/>
-        <a><button type="button" class="btn btn-outline-secondary">שלח</button></a>
-        <br/>
-      <p>לא רשום עדיין? 
+        
+        {
+          !isSent ? 
+          <div>
+            <label for="phone">הכנס את מספר הטלפון שאיתו נרשמת:</label> 
+            <input type="tel" id="phone" name="telephone" required/>
+            <a><button type="button" class="btn btn-outline-secondary" onClick={onSendCode}>שלחו לי קוד לנייד</button></a>
+          </div> 
+          : 
+          <div>
+            <label for="phone">הכנס את הקוד שקיבלת:</label> 
+            <input type="numbers" id="code" name="code" required/>
+            <a><button type="button" class="btn btn-outline-secondary">שלח</button></a>
+          </div>
+        }
+
+        <p class="not-signed">
+          לא רשום עדיין? 
           <Link to={'/Register'}>
             <a class="register">להרשמה </a>
           </Link>          
