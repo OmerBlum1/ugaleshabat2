@@ -7,7 +7,7 @@ footer {
     text-align: center;
     color: white;
     /* position: absolute;  */
-    position: relative;
+    position: relative !important;
     bottom: 0;
 }
  
@@ -16,7 +16,6 @@ footer {
     position: relative;
     bottom: 0;
 }  */
-
 
 /*padding between social networks (facebook,instagram) and text*/
 .padding {

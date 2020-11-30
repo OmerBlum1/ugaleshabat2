@@ -26,10 +26,18 @@ function Home() {
                 </div>
                 <div class="jumbotron midbackground L">
                     <div class="imgcontainer">
-                        <img class="ugaimg " src={uga1} width="214" height="200" />
-                        <img class="ugaimg" src={uga2} width="214" height="200" />
-                        <img class="ugaimg" src={quote} width="214" height="200" />
-                        <img class="ugaimg" src={uga3} width="214" height="200" />
+                        <div class="imgWrapper">
+                            <img class="ugaimg " src={uga1} width="214" height="200" />
+                        </div>
+                        <div class="imgWrapper">
+                            <img class="ugaimg" src={uga2} width="214" height="200" />
+                        </div>
+                        <div class="imgWrapper">
+                            <img class="ugaimg latet" src={quote} width="214" height="200" />
+                        </div>
+                        <div class="imgWrapper">
+                            <img class="ugaimg" src={uga3} width="214" height="200" />
+                        </div>
                     </div>
                 </div>
             </div>
