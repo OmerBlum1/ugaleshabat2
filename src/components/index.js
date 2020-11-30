@@ -4,5 +4,5 @@ export { default as Home } from "./Home";
 export { default as Gallery } from "./gallery";
 export { default as Signin } from "./signin";
 export { default as Register } from "./register";
-export { default as VolunteerMatch } from "./volunteer-match";
+export { default as VolunteerMatch } from "./VolunteerMatch/VolunteerMatch";
 export { default as Admin } from "./Admin";

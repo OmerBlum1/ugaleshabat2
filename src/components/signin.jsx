@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 function Signin() {
   return (
     <div className="Signin">
-      <div class="container-sign-in">
-        <h3> התחברות עם קוד חד פעמי בסמס</h3>
+      <div class="container">
+        <h2> התחברות עם קוד חד פעמי בסמס</h2>
         <label for="phone">הכנס את מספר הטלפון שאיתו נרשמת:</label> 
         <input type="tel" id="phone" name="טלפון" required/>
         <a><button type="button" class="btn btn-outline-secondary">שלחו לי קוד לנייד</button></a>

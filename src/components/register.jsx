@@ -4,10 +4,8 @@ import '../CSSFiles/register.css';
 function Register() {
   return (
     <div className="Register">
-      <div class="container h-100">
-        <div class="row align-items-center my-5 text-right">          
-          <div class="container midbackground">
-            <h1 class="font-weight-light">טופס הצטרפות</h1> 
+        <div class="container">          
+            <h2>טופס הצטרפות</h2> 
             <form>
                 <div class="form-row">
                     <div class="col-md-2 mb-3">
@@ -42,12 +40,11 @@ function Register() {
                     </div>
                 </div>    
                 <div class="marg text-center">
-                  <button class="btn btn-outline-secondary" type="submit">לשלוח</button>
-                </div>        
+                  <a><button type="button" class="btn btn-outline-secondary">שלח</button></a>
+                </div> 
+                <br></br>     
             </form>
           </div>          
-        </div>
-      </div>
     </div>
   );
 }

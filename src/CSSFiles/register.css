@@ -1,39 +1,9 @@
-body 
-{
-    background-color: #D5C9C5;  
-    opacity: 1;
-    margin: 0;
-    padding: 0;
-    min-width: 600px;
-}
 
-.container {
-	display: grid;
-    width: 100%;
-    min-width: 500px;
-    max-width: 95%;
-    justify-content: center;
-}
 
-.midbackground {
-	/*background-color: white;*/
-	position:relative;
-    background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
-    background: rgba(255, 255, 255, 0.7);
-}
-
-label, input, button, h1 {
-	font-family: 'Assistant', sans-serif;
+/* label, input, h1 {
 	color: #FAC1DF;
-}
-
+} */
+/* 
 .form-control::-webkit-input-placeholder {
     color: #CF2A87;
-}
-
-.btn.btn-outline-secondary {
-	font-weight: bolder;
-	color: white;
-	border-color: white;
-	background-color: #FAC1DF;
-}
+}  */

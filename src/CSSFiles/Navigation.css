@@ -1,8 +1,10 @@
 .navbar-dark 
 {
-	background-color: rgba(255,255,255,0.2);
+	background-color: #546270; /*This changes the nav bar color*/
 	height: 50%;
 	width: 100%;
+	font-size: larger; 
+	color:White;
 }
 
 nav 
@@ -10,11 +12,6 @@ nav
 	width: 100%;
 	margin:0px auto;
     left:0px;
-    right:0px;
+	right:0px;
 }
 
-label, button 
-{
-	font-family: 'Assistant', sans-serif;
-	color: #FAC1DF;
-}

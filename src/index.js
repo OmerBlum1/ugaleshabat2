@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+//right to left
+document.getElementsByTagName('html')[0].setAttribute("dir", "rtl");
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

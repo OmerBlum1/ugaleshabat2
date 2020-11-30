@@ -1,0 +1,43 @@
+
+footer {
+    background: #546270; /*This changes the footer colors*/
+    padding: 25px 50px; /*padding inside the footer*/
+    padding-bottom: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    /* position: absolute;  */
+    position: relative;
+    bottom: 0;
+}
+ 
+/*this changes the footer to be at the bottom of the content but middle of page*/
+ /*.footer{
+    position: relative;
+    bottom: 0;
+}  */
+
+
+/*padding between social networks (facebook,instagram) and text*/
+.padding {
+   padding-bottom: 10px;
+}
+
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.facebook {
+    color: white;
+}
+
+a.instagram {
+    color: white;
+}
+
