@@ -17,7 +17,7 @@ import inst12 from '../Images/instagram12.jpg';
 function Gallery() {
   return (
       <div class="container-gallery">
-        <h3>גלריית תמונות</h3> <br/>
+        <h2>גלריית תמונות</h2> <br/>
         <div class="grid-container">
           <img src={inst1} class="image"/>
           <img src={inst2} class="image"/>
