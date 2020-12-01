@@ -63,9 +63,7 @@ function VolunteerList() {
                 </ListItem>
                 );
             })}
-            <Button className="center" variant="outlined" color="primary" >
-                 אישור
-            </Button>
+            <a><button type="button" class="btn btn-outline-secondary">אישור</button></a>
         </List>
       </div>
     

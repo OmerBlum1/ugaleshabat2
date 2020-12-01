@@ -2,14 +2,6 @@
 
 
 /*styling the register link*/
-.register {
-	color: #FAC1DF;
-}
-
-.register:hover{
-	color: #f7b5d8;
-	
-}
 a .Link {
 	font-weight: bolder;
 	color: white;
