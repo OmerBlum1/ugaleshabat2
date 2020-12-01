@@ -1,4 +1,4 @@
-# Welcome to Uga Leshabat website
+# Welcome to 'Uga Leshabat' website
 
 ## Who are we?
 Uga Leshabat is an initiative that match people who would like to bake cakes with people who would love to recieve it and make their weekend sweeter.
@@ -10,8 +10,9 @@ For the managers of the initiative - the websites allow to aprove new volunteers
 The website is built with react (frontend) and node.js (backend).
 In order to run the code locally please:
 1. clone the repository
-2. run: ### `npm install`
-3. run: ### `npm start`
+2. run: `npm install`
+3. run: `npm start`  
+  
 The website should start on your default browser.
 
 
