@@ -1,5 +1,5 @@
 import React from 'react';
-import registeredVolunteers from '../../MockData/ApprovedVolunteers';
+import registeredVolunteers from '../../MockData/MockApprovedVolunteers';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
@@ -38,7 +38,7 @@ const useStyles = makeStyles({
   },
 });
 
-function RegisteredVolunteerList() {
+function RegisteredVolunteersTable() {
   const classes = useStyles();
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
@@ -102,4 +102,4 @@ function RegisteredVolunteerList() {
 }
 
 
-export default RegisteredVolunteerList;
+export default RegisteredVolunteersTable;
