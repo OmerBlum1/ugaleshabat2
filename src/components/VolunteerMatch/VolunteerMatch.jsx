@@ -3,7 +3,6 @@ import VolunteeringForm from "./VolunteeringForm";
 import MatchingTable from "./MatchingTable";
 import Addresses from "../../MockData/MockAddresses";
 
-
 // pure component syntax
 const VolunteerMatch = () => {
   const [addresses, setAddresses] = useState(Addresses);
@@ -19,8 +18,7 @@ const VolunteerMatch = () => {
     nutsfree: false,
   });
 
-//&&
-//               (!address.nutsfree || checkboxes['nutsfree'])
+
   function filterAddresses() {
     console.log("Addresses:", Addresses.length);
     const filteredAddresses = Addresses.filter((address) =>{

@@ -8,6 +8,7 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
+import MatchApprovementDialogSlide from './MatchApprovementDialogSlide';
 
 
 const columns = [
@@ -41,20 +42,7 @@ const columns = [
   }
 ];
 
-function createRow(
-  city,
-  neighborhood,
-  kosher,
-  parve,
-  vegan,
-  sugerfree,
-  lactosefree,
-  glutenfree,
-  peanutfree,
-  nutsfree,
-  howmanypeople,
-  comments
-) {
+function  buildPropertiesString(kosher, parve, vegan, sugerfree, lactosefree, glutenfree, peanutfree, nutsfree){
   let properties = "עוגה ";
   if (kosher) properties = properties.concat("כשרה, ");
   if (parve) properties = properties.concat("פרווה, ");
@@ -70,7 +58,35 @@ function createRow(
   } else {
     properties = "";
   }
-  return { city, neighborhood, properties, howmanypeople, comments };
+  return properties;
+}
+
+function createRow(
+    id,
+    city,
+    neighborhood,
+    kosher,
+    parve,
+    vegan,
+    sugerfree,
+    lactosefree,
+    glutenfree,
+    peanutfree,
+    nutsfree,
+    howmanypeople,
+    comments
+) {
+  let properties = buildPropertiesString(
+      kosher,
+      parve,
+      vegan,
+      sugerfree,
+      lactosefree,
+      glutenfree,
+      peanutfree,
+      nutsfree);
+
+  return { city, neighborhood, properties, howmanypeople, comments, id };
 }
 
 const useStyles = makeStyles({
@@ -104,72 +120,79 @@ function MatchingTable({ addresses = [] }) {
 
   const rows = addresses.map((address) => {
     return createRow(
-      address.city,
-      address.neighborhood,
-      address.kosher,
-      address.parve,
-      address.vegan,
-      address.sugerfree,
-      address.lactosefree,
-      address.glutenfree,
-      address.peanutfree,
-      address.nutsfree,
-      address.howmanypeople,
-      address.comments
+        address.id,
+        address.city,
+        address.neighborhood,
+        address.kosher,
+        address.parve,
+        address.vegan,
+        address.sugerfree,
+        address.lactosefree,
+        address.glutenfree,
+        address.peanutfree,
+        address.nutsfree,
+        address.howmanypeople,
+        address.comments
     );
   });
 
-  const chooseButton = <a><button type="button" class="btn btn-outline-secondary">בחר</button></a>;
+  function chooseButton(rowId){
+    return(
+        <MatchApprovementDialogSlide
+        rowId={rowId}/>
+    );
+  }
+
 
   return (
-    <Paper className={classes.root}>
-      <TableContainer className={classes.container}>
-        <Table stickyHeader aria-label="sticky table">
-          <TableHead>
-            <TableRow>
-              {columns.map((column) => (
-                <TableCell
-                  key={column.id}
-                  align={"right"}
-                  style={{ minWidth: column.minWidth }}
-                >
-                  {column.label}
-                </TableCell>
-              ))}
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows
-              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map((row) => {
-                return (
-                  <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
-                    {columns.map((column) => {
-                      const value = row[column.id];
-                      return (
-                        <TableCell key={column.id} align={"right"}>
-                          {column.format && typeof value === "number"
-                            ? column.format(value)
-                              : (column.id === 'choose'?chooseButton:value)}
-                        </TableCell>
-                      );
-                    })}
-                  </TableRow>
-                );
-              })}
-          </TableBody>
-        </Table>
-      </TableContainer>
-      <TablePagination
-        rowsPerPageOptions={[10, 25, 100]}
-        component="div"
-        count={rows.length}
-        rowsPerPage={rowsPerPage}
-        page={page}
-        onChangePage={handleChangePage}
-        onChangeRowsPerPage={handleChangeRowsPerPage}
-      />
-    </Paper>
+      <Paper className={classes.root}>
+        <TableContainer className={classes.container}>
+          <Table stickyHeader aria-label="sticky table">
+            <TableHead>
+              <TableRow>
+                {columns.map((column) => (
+                    <TableCell
+                        key={column.id}
+                        align={"right"}
+                        style={{ minWidth: column.minWidth }}
+                    >
+                      {column.label}
+                    </TableCell>
+                ))}
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows
+                  .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                  .map((row) => {
+                    return (
+                        <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
+                          {columns.map((column) => {
+                            const value = row[column.id];
+                            return (
+                                <TableCell key={column.id} align={"right"}>
+                                  {column.format && typeof value === "number"
+                                      ? column.format(value)
+                                      : (column.id === 'choose'?chooseButton(row.id):value)}
+                                </TableCell>
+                            );
+                          })}
+                        </TableRow>
+                    );
+                  })}
+            </TableBody>
+          </Table>
+        </TableContainer>
+        <TablePagination
+            rowsPerPageOptions={[10, 25, 100]}
+            component="div"
+            count={rows.length}
+            rowsPerPage={rowsPerPage}
+            page={page}
+            onChangePage={handleChangePage}
+            onChangeRowsPerPage={handleChangeRowsPerPage}
+        />
+      </Paper>
 
   );
 }
