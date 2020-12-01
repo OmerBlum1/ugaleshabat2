@@ -7,6 +7,8 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 import Addresses from "../../MockData/MockAddresses";
+import '../../CSSFiles/MatchApprovementDialogSlide.css';
+
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -35,7 +37,7 @@ function  buildPropertiesString(kosher, parve, vegan, sugerfree, lactosefree, gl
 
 function DialogMessage({address = {}}){
     return(
-        <p>אנחנו רואים שמצאת את הכתובת שתזכה לקבל את העוגה שלך, איזה כיף!<br/>
+        <p className='text'>אנחנו רואים שמצאת את הכתובת שתזכה לקבל את העוגה שלך, איזה כיף!<br/>
             כעת, כל שנותר הוא לאשר את פרטי השיבוץ, ולאפות עוגה:)<br/>
             עיר: {address.city}<br/>
             איזור: {address.neighborhood}<br/>
@@ -84,7 +86,7 @@ function MatchApprovementDialogSlide({ rowId }){
                 aria-labelledby="alert-dialog-slide-title"
                 aria-describedby="alert-dialog-slide-description"
             >
-                <DialogTitle id="alert-dialog-slide-title">{"אישור סופי לשיבוץ הכתובת"}</DialogTitle>
+                <DialogTitle id="alert-dialog-slide-title" className='text'>{"אישור סופי לשיבוץ הכתובת"}</DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-slide-description">
                         <DialogMessage

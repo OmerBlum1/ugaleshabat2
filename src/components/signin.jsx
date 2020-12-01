@@ -20,7 +20,7 @@ function Signin() {
             <label for="phone">הכנס את מספר הטלפון שאיתו נרשמת:</label> 
             <input type="tel" id="phone" name="telephone" required/>
             <a><button type="button" class="btn btn-outline-secondary" onClick={onSendCode}>שלחו לי קוד לנייד</button></a>
-          </div> 
+          </div>
           : 
           <div>
             <label for="phone">הכנס את הקוד שקיבלת:</label> 
