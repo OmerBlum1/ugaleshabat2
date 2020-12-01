@@ -1,9 +1,9 @@
 const Addresses = [
   {
     id: 0,
-    name: "עמי",
-    lastname: "ותמי",
-    phone: "0590763375",
+    firstName: "עמי",
+    lastName: "ותמי",
+    phoneNumber: "0590763375",
     city: "תל אביב יפו",
     neighborhood: "הצפון הישן",
     street: "זית",

@@ -27,12 +27,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c91a49c-f75a-4d73-a50a-2d34cc8ec11c" name="Default Changelist" comment="added a 'choose' butten in the volunteering matching component&#10;made the social media links open in a new tab&#10;updated the MockAddresses.js with more addresses">
-      <change afterPath="$PROJECT_DIR$/src/components/VolunteerMatch/MatchApprovementDialogSlide.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MockData/MockAddresses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MockData/MockAddresses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VolunteerMatch/MatchingTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VolunteerMatch/MatchingTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VolunteerMatch/VolunteerMatch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VolunteerMatch/VolunteerMatch.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/signin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/signin.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="uri-polishing-volunteer-match" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kxpBJoV5qinGrz5e4j1kkTV6JD" />
@@ -89,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606829917486</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added a MatchApprovementDialogSlide.jsx component">
+      <created>1606839815774</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606839815774</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,13 +145,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Should still work on the logic of the filtering but should work pretty much fine" />
     <MESSAGE value="added a 'choose' butten in the volunteering matching component&#10;made the social media links open in a new tab&#10;updated the MockAddresses.js with more addresses" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a 'choose' butten in the volunteering matching component&#10;made the social media links open in a new tab&#10;updated the MockAddresses.js with more addresses" />
+    <MESSAGE value="added a MatchApprovementDialogSlide.jsx component" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a MatchApprovementDialogSlide.jsx component" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1606830169105">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1606830169105" />
+    <state x="121" y="51" key="MergeDialog" timestamp="1606840097216">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="51" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1606840097216" />
+    <state x="280" y="102" key="MultipleFileMergeDialog" timestamp="1606840097226">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="280" y="102" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1606840097226" />
     <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1606829933091">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -148,6 +169,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="0" width="677" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1606839350090" />
+    <state x="364" y="54" key="git4idea.branch.GitSmartOperationDialog" timestamp="1606840064872">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="364" y="54" key="git4idea.branch.GitSmartOperationDialog/0.0.1280.680@0.0.1280.680" timestamp="1606840064872" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1606818051942">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
