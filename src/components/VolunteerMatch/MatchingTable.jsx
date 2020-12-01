@@ -34,6 +34,11 @@ const columns = [
     align: "right",
     format: (value) => value.toFixed(2),
   },
+  {
+    id:"choose",
+    label: "בחירת כתובת",
+    minWidth: 50,
+  }
 ];
 
 function createRow(
@@ -50,18 +55,20 @@ function createRow(
   howmanypeople,
   comments
 ) {
-  let properties = "";
-  if (kosher) properties = properties.concat("עוגה כשרה, ");
-  if (parve) properties = properties.concat("עוגה פרווה, ");
-  if (vegan) properties = properties.concat("עוגה טבעונית, ");
-  if (sugerfree) properties = properties.concat("עוגה ללא סוכר, ");
-  if (lactosefree) properties = properties.concat("עוגה ללא לקטוז, ");
-  if (glutenfree) properties = properties.concat("עוגה ללא גלוטן, ");
+  let properties = "עוגה ";
+  if (kosher) properties = properties.concat("כשרה, ");
+  if (parve) properties = properties.concat("פרווה, ");
+  if (vegan) properties = properties.concat("טבעונית, ");
+  if (sugerfree) properties = properties.concat("ללא סוכר, ");
+  if (lactosefree) properties = properties.concat("ללא לקטוז, ");
+  if (glutenfree) properties = properties.concat("ללא גלוטן, ");
   if (peanutfree) properties = properties.concat("ללא בוטנים, ");
-  if (nutsfree) properties = properties.concat("עוגה אגוזים, ");
+  if (nutsfree) properties = properties.concat("ללא אגוזים, ");
   const propertiesLength = properties.length;
-  if (propertiesLength > 1) {
+  if (propertiesLength > 5) {
     properties = properties.slice(0, propertiesLength - 2);
+  } else {
+    properties = "";
   }
   return { city, neighborhood, properties, howmanypeople, comments };
 }
@@ -112,6 +119,8 @@ function MatchingTable({ addresses = [] }) {
     );
   });
 
+  const chooseButton = <a><button type="button" class="btn btn-outline-secondary">בחר</button></a>;
+
   return (
     <Paper className={classes.root}>
       <TableContainer className={classes.container}>
@@ -141,7 +150,7 @@ function MatchingTable({ addresses = [] }) {
                         <TableCell key={column.id} align={"right"}>
                           {column.format && typeof value === "number"
                             ? column.format(value)
-                            : value}
+                              : (column.id === 'choose'?chooseButton:value)}
                         </TableCell>
                       );
                     })}

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import VolunteeringForm from "./VolunteeringForm";
 import MatchingTable from "./MatchingTable";
-import Addresses from "./Addresses";
+import Addresses from "../../MockData/MockAddresses";
 
 
 // pure component syntax
@@ -19,20 +19,23 @@ const VolunteerMatch = () => {
     nutsfree: false,
   });
 
+//&&
+//               (!address.nutsfree || checkboxes['nutsfree'])
   function filterAddresses() {
+    console.log("Addresses:", Addresses.length);
     const filteredAddresses = Addresses.filter((address) =>{
-      console.log(address.city , cityInput);
           return address.city.includes(cityInput) &&
-          (!address.kosher || checkboxes["kosher"]) &&
-          (!address.parve || checkboxes['parve']) &&
-          (!address.vegan || checkboxes['vegan']) &&
-          (!address.sugerfree || checkboxes['sugerfree']) &&
-          (!address.lactosefree || checkboxes['lactosefree']) &&
-          (!address.glutenfree || checkboxes['glutenfree']) &&
-          (!address.peanutfree || checkboxes['peanutfree']) &&
-          (!address.nutsfree || checkboxes['nutsfree'])
+              (!address.parve || checkboxes['parve'])&&
+              (!address.glutenfree || checkboxes['glutenfree'])&&
+              (!address.lactosefree || checkboxes['lactosefree'])&&
+              (!address.sugerfree || checkboxes['sugerfree'])&&
+              (!address.vegan || checkboxes['vegan'])&&
+              (!address.peanutfree || checkboxes['peanutfree'])&&
+              (!address.kosher || checkboxes['kosher'])&&
+              (!address.nutsfree || checkboxes['nutsfree'])
     }
     );
+    console.log("Filterred Addresses:", filteredAddresses.length);
     setAddresses(filteredAddresses);
   }
 

@@ -14,11 +14,15 @@ function Footer() {
         </p>
         <p> 
         <a href="https://www.facebook.com/groups/258116568671570"
-        className="facebook social">
+           target="_blank"
+           rel="noopener noreferrer"
+           className="facebook social">
         <FontAwesomeIcon icon={faFacebook} size="2x" />
         </a>
-            <a href="https://www.instagram.com/ugaleshabat/"
-        className="instagram social">
+        <a href="https://www.instagram.com/ugaleshabat/"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="instagram social">
         <FontAwesomeIcon icon={faInstagram} size="2x" />
         </a>
         </p>

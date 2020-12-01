@@ -18,14 +18,6 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                     required
                   />
                 </div>
-                <div class="col-md-5 mb-3">
-                  <label for="apartmentNumber">מס' העוגות</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="apartmentNumber"
-                  />
-                </div>
               </div>
               <div>
                 <label class="marg">
@@ -36,9 +28,9 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                     <input
                       class="form-check-input"
                       type="checkbox"
-                      id="kosherCake"
+                      id="kosher"
                       value="option1"
-                      onChange={(e) => onCheckboxChange(e, "kosherCake")}
+                      onChange={(e) => onCheckboxChange(e, "kosher")}
                     />
                     <label
                       class="form-check-label pad-small"
@@ -51,7 +43,7 @@ const VolunteeringForm = ({ onCityChange, onCheckboxChange }) => {
                     <input
                       class="form-check-input"
                       type="checkbox"
-                      id="parveCake"
+                      id="parve"
                       value="option2"
                       onChange={(e) => onCheckboxChange(e, "parve")}
                     />

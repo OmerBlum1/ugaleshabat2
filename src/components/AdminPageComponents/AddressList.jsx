@@ -24,7 +24,7 @@ function createData(firstName, lastName, city, street, homenumber, comments) {
   return { firstName, lastName, city, street, homenumber, comments };
 }
 
-const rows = addresses.map((address) => 
+const rows = addresses.map((address) =>
     {
         return createData(address.firstName, address.lastName, address.city, address.street, address.homenumber, address.comments)
     }
