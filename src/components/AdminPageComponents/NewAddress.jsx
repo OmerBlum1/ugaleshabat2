@@ -19,8 +19,6 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-
-
 export default function NewAddress() 
 {
     const [state, setState] = React.useState({
