@@ -27,11 +27,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c91a49c-f75a-4d73-a50a-2d34cc8ec11c" name="Default Changelist" comment="added a 'choose' butten in the volunteering matching component&#10;made the social media links open in a new tab&#10;updated the MockAddresses.js with more addresses">
+      <change afterPath="$PROJECT_DIR$/src/CSSFiles/MatchApprovementDialogSlide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MockData/MockAddresses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MockData/MockAddresses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VolunteerMatch/MatchApprovementDialogSlide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VolunteerMatch/MatchApprovementDialogSlide.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/signin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/signin.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MockData" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/CSSFiles" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -64,6 +64,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Uri\Desktop\Uri\University\Computer Science\UgaLeshabat\ugaleshabat2\src\CSSFiles" />
       <recent name="C:\Users\Uri\Desktop\Uri\University\Computer Science\UgaLeshabat\ugaleshabat2\src\MockData" />
     </key>
   </component>
