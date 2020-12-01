@@ -24,6 +24,7 @@ const registeredVolunteers = [
     VolunteeringTimes: '4',
   },
   {
+    id: 2,
     firstName: 'אורי',
     lastName: 'מולכו',
     phoneNumber: '0534445868',
