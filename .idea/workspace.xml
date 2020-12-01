@@ -26,7 +26,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c91a49c-f75a-4d73-a50a-2d34cc8ec11c" name="Default Changelist" comment="added a 'choose' butten in the volunteering matching component&#10;made the social media links open in a new tab&#10;updated the MockAddresses.js with more addresses" />
+    <list default="true" id="4c91a49c-f75a-4d73-a50a-2d34cc8ec11c" name="Default Changelist" comment="added a 'choose' butten in the volunteering matching component&#10;made the social media links open in a new tab&#10;updated the MockAddresses.js with more addresses">
+      <change afterPath="$PROJECT_DIR$/src/components/VolunteerMatch/MatchApprovementDialogSlide.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MockData/MockAddresses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MockData/MockAddresses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VolunteerMatch/MatchingTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VolunteerMatch/MatchingTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VolunteerMatch/VolunteerMatch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VolunteerMatch/VolunteerMatch.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,10 +144,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606829933091" />
-    <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1606824987014">
+    <state x="0" y="0" width="677" height="680" key="find.popup" timestamp="1606839350090">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="0" y="0" width="587" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1606824987014" />
+    <state x="0" y="0" width="677" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1606839350090" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1606818051942">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
