@@ -11,7 +11,10 @@ The website is built with react (frontend) and node.js (backend).
 In order to run the code locally please:
 1. clone the repository
 2. run:
-### "npm install" 
+
+### `npm test`
+
+
 3. run:
 ### "npm start"
 The website should start on your default browser.
