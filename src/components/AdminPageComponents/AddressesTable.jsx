@@ -39,7 +39,7 @@ const useStyles = makeStyles({
   },
 });
 
-function AddressList() {
+function AddressesTable() {
   const classes = useStyles();
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
@@ -103,4 +103,4 @@ function AddressList() {
 }
 
 
-export default AddressList;
+export default AddressesTable;

@@ -1,13 +1,11 @@
 import React from "react";
-import VolunteerList from "./AdminPageComponents/VolunteerList";
-import AddressList from "./AdminPageComponents/AddressList";
+import UnregisteredVolunteerList from "./AdminPageComponents/UnregisteredVolunteersList";
+import AddressesTable from "./AdminPageComponents/AddressesTable";
 import NewAddress from "./AdminPageComponents/NewAddress";
 import MatchingTable from "./AdminPageComponents/MatchingsTable";
-import RegisteredVolunteerList from "./AdminPageComponents/ApprovedVolunteersList";
+import RegisteredVolunteersTable from "./AdminPageComponents/ApprovedVolunteersTable";
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -86,14 +84,14 @@ function Admin() {
       <TabPanel value={value} index={0}>
          <Grid item xs={1}/>
           <Grid item xs={10}>
-              <AddressList />
+              <AddressesTable />
           </Grid>
           <Grid item xs={1}/>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Grid item xs={1}/>
         <Grid item xs={10}>
-            <RegisteredVolunteerList />
+            <RegisteredVolunteersTable />
         </Grid>
         <Grid item xs={1}/>
       </TabPanel>
@@ -114,7 +112,7 @@ function Admin() {
       <TabPanel value={value} index={4}>
         <Grid item xs={1}/>
         <Grid item xs={2}>
-          <VolunteerList />
+          <UnregisteredVolunteerList />
         </Grid>
         <Grid item xs={9}/>
       </TabPanel>
