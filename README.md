@@ -6,7 +6,7 @@ The website will allow you to register as a new volunteer, sign-in to your profi
 
 For the managers of the initiative - the websites allow to aprove new volunteers, add new families, see data about the matchings and much more.
 
-## how to start?
+## How to start?
 The website is built with react (frontend) and node.js (backend).
 In order to run the code locally please:
 1. clone the repository
