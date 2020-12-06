@@ -36,8 +36,7 @@ export default function NewAddress()
     
       function handleSubmit(event)
       {
-          alert(`נוספה כתובת חדשה\n ${event.target.privateName.value} ${event.target.lastName.value}, ${event.target.NumOfPepole.value} אנשים. ${event.target.City.value} ${event.target.Street.value} ${event.target.HouseNumber.value}\n.
-            להלן הרגישויות/דרישות ייחודיות: כשר ${state.Kosher}, טבעוני: ${state.Vegan}, פרווה: ${state.Parve}`);
+          alert(`נוספה כתובת חדשה\n ${event.target.privateName.value} ${event.target.lastName.value}, ${event.target.NumOfPepole.value} אנשים. ${event.target.City.value} ${event.target.Street.value} ${event.target.HouseNumber.value}\n.להלן הרגישויות/דרישות ייחודיות: כשר ${state.Kosher}, טבעוני: ${state.Vegan}, פרווה: ${state.Parve}`);
       }
 
 

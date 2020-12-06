@@ -56,7 +56,7 @@ function UnregisteredVolunteerList() {
                         inputProps={{ 'aria-labelledby': labelId }}
                     />
                     </ListItemIcon>
-                    <ListItemText id={labelId} primary={`${user.lastName +" " + user.firstName + " ," + user.phoneNumber}`} />
+                    <ListItemText id={labelId} primary={`${user.firstName +" " + user.lastName + " ," + user.phoneNumber}`} />
                     <ListItemSecondaryAction>
                     <IconButton edge="end" aria-label="comments">
                     </IconButton>

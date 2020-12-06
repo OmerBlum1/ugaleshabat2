@@ -9,6 +9,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
+import VolunteerChooseDialog from './VolunteerChooseDialog';
 
 const columns = [
   { id: 'firstName', label: 'שם פרטי', minWidth: 100 , align: 'right'},
@@ -16,16 +17,17 @@ const columns = [
   { id: 'age', label: 'גיל', minWidth: 100 , align: 'right'},
   { id: 'phoneNumber', label: 'טלפון', minWidth: 100, align: 'right'},
   { id: 'VolunteeringTimes', label: 'מספר התנדבויות', minWidth: 100 , align: 'right'},
-  { id: 'strikes', label: 'מספר ביטולים', minWidth: 100, align: 'right'}
+  { id: 'strikes', label: 'מספר ביטולים', minWidth: 100, align: 'right'},
+  { id: 'edit', label: 'עריכת מתנדב', minWidth: 50, align: 'right'}
 ];
 
-function createData(firstName, lastName, age,VolunteeringTimes, strikes, phoneNumber) {
-  return { firstName, lastName, age, VolunteeringTimes, strikes, phoneNumber };
+function createData(id, firstName, lastName, age,VolunteeringTimes, strikes, phoneNumber) {
+  return { id, firstName, lastName, age, VolunteeringTimes, strikes, phoneNumber };
 }
 
 const rows = registeredVolunteers.map((user) => 
     {
-        return createData(user.firstName, user.lastName, user.age, user.VolunteeringTimes, user.strikes, user.phoneNumber)
+        return createData(user.id, user.firstName, user.lastName, user.age, user.VolunteeringTimes, user.strikes, user.phoneNumber)
     }
 );
 
@@ -37,6 +39,13 @@ const useStyles = makeStyles({
     maxHeight: 440,
   },
 });
+
+function chooseButton(rowId){
+  console.log({rowId});
+  return(
+      <VolunteerChooseDialog rowId={rowId}/>
+  );
+}
 
 function RegisteredVolunteersTable() {
   const classes = useStyles();
@@ -78,7 +87,11 @@ function RegisteredVolunteersTable() {
                     const value = row[column.id];
                     return (
                       <TableCell key={column.id} align={column.align}>
-                        {column.format && typeof value === 'number' ? column.format(value) : value}
+                        {column.format && typeof value === 'number' ?
+                        column.format(value) : 
+                        (column.id === 'edit' ?
+                          chooseButton(row.id) 
+                          : value)}
                       </TableCell>
                     );
                   })}

@@ -10,6 +10,8 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
+import AddressChooseDialog from './AddressChooseDialog';
+
 
 const columns = [
   { id: 'firstName', label: 'שם פרטי', minWidth: 50 , align: 'right'},
@@ -18,15 +20,16 @@ const columns = [
   { id: 'street', label: 'רחוב', minWidth: 50 , align: 'right'},
   { id: 'homenumber', label: 'מספר בית', minWidth: 50 , align: 'right'},
   { id: 'comments', label: 'הערות', minWidth: 10 , align: 'right'},
+  { id: 'edit', label: 'עריכת כתובת', minWidth: 50, align: 'right'}
 ];
 
-function createData(firstName, lastName, city, street, homenumber, comments) {
-  return { firstName, lastName, city, street, homenumber, comments };
+function createData(id, firstName, lastName, city, street, homenumber, comments) {
+  return { id, firstName, lastName, city, street, homenumber, comments };
 }
 
 const rows = addresses.map((address) =>
     {
-        return createData(address.firstName, address.lastName, address.city, address.street, address.homenumber, address.comments)
+        return createData(address.id, address.firstName, address.lastName, address.city, address.street, address.homenumber, address.comments)
     }
 );
 
@@ -52,6 +55,14 @@ function AddressesTable() {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
+
+  function chooseButton(rowId)
+  {
+    console.log({rowId});
+    return(
+        <AddressChooseDialog rowId={rowId}/>
+    );
+  }
 
   return (
     <Paper className={classes.root}>
@@ -79,7 +90,11 @@ function AddressesTable() {
                     const value = row[column.id];
                     return (
                       <TableCell key={column.id} align={column.align}>
-                        {column.format && typeof value === 'number' ? column.format(value) : value}
+                        {column.format && typeof value === 'number' 
+                        ? column.format(value) 
+                        : (column.id === 'edit' 
+                          ? chooseButton(row.id) 
+                            : value)}
                       </TableCell>
                     );
                   })}
