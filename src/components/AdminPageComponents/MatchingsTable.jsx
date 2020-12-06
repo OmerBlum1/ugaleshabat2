@@ -9,6 +9,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
+import MatchChooseDialog from './MatchChooseDialog';
 
 const columns = [
   { id: 'addFirstName', label: 'שם פרטי', minWidth: 100 , align: 'right'},
@@ -19,15 +20,16 @@ const columns = [
   { id: 'volFirstName', label: 'שם פרטי', minWidth: 100 , align: 'right'},
   { id: 'volLastName', label: 'שם משפחה', minWidth: 100 , align: 'right'},
   { id: 'volPhoneNumber', label: 'טלפון', minWidth: 100, align: 'right'},
+  { id: 'edit', label: 'עריכת כתובת', minWidth: 50, align: 'right'}
 ];
 
-function createData(addFirstName, addLastName, addPhoneNumber, addCity, addNeigh, volFirstName, volLastName, volPhoneNumber) {
-  return { addFirstName, addLastName, addPhoneNumber, addCity, addNeigh, volFirstName, volLastName, volPhoneNumber };
+function createData(id, addFirstName, addLastName, addPhoneNumber, addCity, addNeigh, volFirstName, volLastName, volPhoneNumber) {
+  return { id, addFirstName, addLastName, addPhoneNumber, addCity, addNeigh, volFirstName, volLastName, volPhoneNumber };
 }
 
 const rows = matches.map((match) => 
     {
-        return createData(match.address.firstName, match.address.lastName, match.address.phone, match.address.city, match.address.neighborhood, match.volunteer.firstName, match.volunteer.lastName, match.volunteer.phoneNumber)
+        return createData(match.id, match.address.firstName, match.address.lastName, match.address.phone, match.address.city, match.address.neighborhood, match.volunteer.firstName, match.volunteer.lastName, match.volunteer.phoneNumber)
     }
 );
 
@@ -54,6 +56,14 @@ function MatchingTable() {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
+
+  function chooseButton(rowId)
+  {
+    console.log({rowId});
+    return(
+        <MatchChooseDialog rowId={rowId}/>
+    );
+  }
 
   return (
     <Paper className={classes.root}>
@@ -85,7 +95,11 @@ function MatchingTable() {
                     const value = row[column.id];
                     return (
                       <TableCell key={column.id} align={column.align}>
-                        {column.format && typeof value === 'number' ? column.format(value) : value}
+                        {column.format && typeof value === 'number' 
+                        ? column.format(value) 
+                        : (column.id === 'edit' 
+                          ? chooseButton(row.id) 
+                            : value)}
                       </TableCell>
                     );
                   })}

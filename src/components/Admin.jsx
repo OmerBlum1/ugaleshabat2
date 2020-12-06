@@ -12,6 +12,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import ResetMatchingsTable from './AdminPageComponents/ResetMatchingsTable';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -98,7 +99,8 @@ function Admin() {
       <TabPanel value={value} index={2}>
         <Grid item xs={1}/>
         <Grid item xs={10}>
-          <MatchingTable  />
+          <MatchingTable  /><br/>
+          <ResetMatchingsTable />
         </Grid>
         <Grid item xs={1}/>
       </TabPanel>
@@ -121,55 +123,3 @@ function Admin() {
 }
 
 export default Admin; 
-/*
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-}));
-
-function Admin() {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.root}>
-      <Grid container spacing={3} style={{textAlign:'center'}}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>איזור ניהול</Paper>
-        </Grid>
-        <Grid item xs={1}/>
-        <Grid item xs={10}>
-            <AddressList />
-        </Grid>
-        <Grid item xs={1}/>
-        <Grid item xs={1}/>
-        <Grid item xs={10}>
-            <RegisteredVolunteerList />
-        </Grid>
-        <Grid item xs={1}/>
-        <Grid item xs={1}/>
-        <Grid item xs={10}>
-          <MatchingTable  />
-        </Grid>
-        <Grid item xs={1}/>
-        <Grid item xs={1}/>
-        <Grid item xs={4}>
-            <NewAddress />
-        </Grid>
-        <Grid item xs={7}/>
-        <Grid item xs={1}/>
-        <Grid item xs={2}>
-          <VolunteerList />
-        </Grid>
-        <Grid item xs={9}/>
-      </Grid>
-    </div>
-  );
-}
-*/
-
