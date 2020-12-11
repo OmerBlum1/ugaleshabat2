@@ -92,6 +92,7 @@ function createRow(
 const useStyles = makeStyles({
   root: {
     width: "100%",
+    marginBottom: '20px'
   },
   container: {
     maxHeight: 440,

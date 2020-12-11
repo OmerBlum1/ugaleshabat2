@@ -10,8 +10,7 @@ function Signin() {
   }
 
   return (
-    <div className="Signin">
-      <div class="container">
+    <div class="container Signin">
         <h2> התחברות עם קוד חד פעמי בסמס</h2>
         
         {
@@ -38,7 +37,6 @@ function Signin() {
         <br/>
         <br/>
       </div>
-    </div>
   );
 }
 

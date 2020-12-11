@@ -13,7 +13,7 @@ function Home() {
         <div className="home">
             <div class="container-home">
                 <div class="jumbotron midbackground R">
-                    <h1 class="display-4 bold"><img src={CakeLogo} width="300" height="300" /></h1>
+                    <h1 className="display-4 bold"><img src={CakeLogo} width="300" height="300" /></h1>
                     <h4>מעוניינים לאפות ולהעביר עוגה?</h4>
                     <p class="lead">
                         <Link to={'/Register'}>
