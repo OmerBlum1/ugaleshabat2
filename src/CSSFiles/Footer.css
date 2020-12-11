@@ -2,8 +2,7 @@
 footer {
     background: #546270; /*This changes the footer colors*/
     padding: 25px 50px; /*padding inside the footer*/
-    padding-bottom: 100px;
-    height: 100px;
+    height: 120px;
     text-align: center;
     color: white;
     /* position: absolute;  */

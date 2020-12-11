@@ -1,7 +1,7 @@
 .navbar-dark 
 {
 	background-color: #546270; /*This changes the nav bar color*/
-	height: 50%;
+	min-height: 100px;
 	width: 100%;
 	font-size: larger; 
 	color:White;
@@ -23,4 +23,15 @@ nav
 #basic-nav-dropdown::after {
 	position: relative;
 	top: 4px;
+}
+
+.navbar-brand {
+	height: 80px;
+	width: 80px;
+	margin-left: 1rem;
+}
+
+.navbar-brand > img {
+	height: 100%;
+    width: 100%;
 }

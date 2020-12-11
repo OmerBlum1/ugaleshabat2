@@ -54,14 +54,14 @@ const VolunteerMatch = () => {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <VolunteeringForm
         onCityChange={onCityChange}
         onCheckboxChange={onCheckboxChange}
       />
       <br></br>
       <MatchingTable addresses={addresses} />
-    </div>
+    </React.Fragment>
   );
 };
 
