@@ -1,0 +1,15 @@
+
+/*adding a little bit of padding between checkbox and words*/
+.form-check-label{
+    padding-right: 5px;
+}
+
+.form-check-input {
+    width: 10px;
+    margin-bottom: 0px !important;
+    margin-right: 0px !important;
+}
+
+.form-check-inline {
+    padding-right: 0px !important;
+}
